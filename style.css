@@ -1,0 +1,148 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background: url('/images/pattern-background-mobile.svg') no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+ 
+ body {
+   background-color: var(--Pale-blue);
+   margin: 50px;
+   min-height: 100vh;
+ }
+
+ .container {
+    background-color:#ffff;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+    border-radius:  20px;
+ }
+
+ p  {
+margin-top: 15px;
+font-size: 16px;
+}
+
+h1 {
+    margin-top: 15px;
+
+}
+
+ img {
+     max-width: 100%;
+ }
+
+ .container .hero {
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+     
+ }
+
+button {
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: var(--Bright-blue);
+    padding: 14px 20px  14px 20px;
+    color: #ffff;    
+    width: 50%;
+    cursor: pointer;
+    margin: auto;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: var(--Pale-blue);
+}
+
+.btn {
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    cursor: pointer;
+   
+}
+
+.btn:hover {
+    color: blue;
+
+}
+
+
+.container .box {
+    display: flex;
+    background-color: var(--Very-pale-blue);
+    margin: 20px auto;
+    width: 50%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.container .box article {
+    display: flex;
+}
+
+
+.btn-second {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn-second:hover {
+    color: #000;
+}
+
+h3 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.des p {
+    margin: 0;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+ .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+ }
+ .attribution a { 
+    color: hsl(228, 45%, 44%); 
+ }
+
+ @media(min-width: 768px) {
+
+    .bg {
+        background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
+        height: 50vh;    }
+     .container {
+         width: 500px;
+     }
+ }
